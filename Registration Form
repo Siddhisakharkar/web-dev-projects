@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <link rel="stylesheet" href="P2.css">
+    </head>
+<body>
+    <h1>Prof Ram Meghe College Of Engineering And Management</h1>
+    <h2>Registration form</h2>
+    
+    <div class="form-container">
+    <form>
+        <fieldset>
+            <label for="fname"><b>First Name :</b></label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname"><b>Last Name :</b></label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="tel"><b>Mobile No.</b></label><br>
+            <input  id="tel" name="tel" placeholder="123-456-7890"><br>
+            <label for="mail"><b>E-mail :</b></label><br>
+            <input type="alphanumeric" id="mail" name="mail"><br> 
+            <label for="med"><b>Medical Certificate :</b></label><br>
+            <input id="med" name="med"><br>
+            <label for="Add"><b>Permanent Address :</b></label> :</label><br>
+            <input type="text" id="Add" name="Add"><br>
+            <label for="uname"><b>University Name :</b></label><br>
+            <input type="text" id="uname" name="uname"><br>
+            <label for="cname"><b>College Name :</b></label><br>
+            <input type="text" id="cname" name="cname"><br>
+            <label type="checkbox" for="Places"><b>Places student want to explore during industrial visit:</b></label><br>
+            <input type="checkbox" id="place1" name="place1" value="Delhi">Delhi<br>
+            <input type="checkbox" id="place2" name="place2" value="Kullu">Kullu<br>
+            <input type="checkbox" id="place3" name="place3" value="Punjab">Punjab<br>
+            <input type="checkbox" id="place4" name="place4" value="Amritsar">Amritsar<br>
+            <input type="checkbox" id="place5" name="place5" value="Hyderabad">Hyderabad<br>
+            <input type="checkbox" id="place6" name="place6" value="kerala">Kerala<br>
+            <input type="checkbox" id="place7" name="place7" value="bengluru">Bengluru<br>
+            <input type="checkbox" id="place8" name="place8" value="Pune">Pune<br>
+            <input type="checkbox" id="place9" name="place9" value="Mubmai">Mumbai<br>
+            <input type="checkbox" id="place10" name="place10" value="Other">Other<br>
+            <label for="Suggestion"><b>Suggestion :</b></label><br>
+            <input type="text" id="Suggestion" name="Suggestion"><br>
+            <button>Submit</button>
+
+
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
+h2 {
+    font-style: normal;
+    color : Red;
+    text-align: center;
+}
+input[type=text], state {
+    width : 70%;
+    margin : 5px;
+}
+.form-container {
+    margin-left: 300px;
+    margin-right:300px;
+    margin-bottom: 200px;
+}
+button {
+    background-color: darkolivegreen;
+    color :white;
+}
+h1 {
+    text-align: center;
+    color : green
+}
+
+
