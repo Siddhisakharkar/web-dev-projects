@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style media="screen">
+        *:before,
+        *:after{
+            padding: 0;
+            margin : 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: aliceblue;
+
+        }
+        .background{
+            width: 430px;
+            height: 520px;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .shape:first-child{
+            background: linear-gradient(
+
+                blue,
+                lightblue
+
+            );
+            left:-80px;
+            top:-80px;
+        }
+        .shape:last-child{
+            background: linear-gradient(
+            to right,
+            blue,
+            lightblue
+
+        );
+        left:-30px;
+        top:-80px;
+    }   
+        
+     
+        form{
+            height: 420px;
+            width:400px;
+            background-color: black;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+
+            border-radius: 10px;  
+            border: 2px solid ;
+            box-shadow: 0 0 10px;
+            padding :50px 35px;
+            }
+        form *{
+            font-family:'Times New Roman', Times, serif;
+            color:aliceblue;
+            letter-spacing: 0.5px;
+            outline: none;
+            border :none;
+        }
+        form h3{
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+
+        }
+        label{
+            display: block;
+            margin-top: 30px ;
+            font-size: 16px;
+            font-weight:500 ;
+        }
+        input{
+            display:block;
+            height:50px;
+            width:100%;
+            background-color: black;
+            border-radius: 3px;
+            padding:0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+
+
+        }
+        ::placeholder{
+            color: aliceblue;
+
+        }
+        button{
+            margin-top: 50px;
+            width:100%;
+            background-color: rgb(251, 248, 248);
+            color:black;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .social{
+            margin-top: 30px;
+            display:flex;
+        }
+        .social div{
+            background-color: aqua;
+            width: 150px;
+            border-radius: 3px;
+            padding: 5px 10px 10px 5px;
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+        }
+        .social div:hover{
+            background-color: aquamarine;
+        }
+        .social .fb{
+            margin-left: 25px;
+        }
+        .social i{
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome Back...!!</h1>
+    <div class="background">
+        <div class="shape">
+            <div class="shape">
+
+            </div>
+        </div>
+    </div>
+    <form>
+        <form>
+            <h3>Login Here</h3>
+            <label for="email">Enter your E-mail</label>
+            <input type="email" placeholder="Email" id="email">
+            <label for="password">Enter your password</label>
+            <input type="password" placeholder="Password" id="password">
+            <button type="Submit" onclick="auth()">Log In</button>
+          </form>
+        
+    </form>
+
+    <script>
+        function auth(){
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        if (email === 'admin@example.com' && password === '12345678') {
+        localStorage.setItem('loggedIn', true);
+        window.location.replace("a1.html");
+        } 
+        else 
+        {
+        alert('Invalid username or password!');
+        }
+    }
+</script>
+    </body>
+</html>
